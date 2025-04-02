@@ -1,0 +1,78 @@
+@use "../../../../public/assets/_var.scss" as *;
+
+.footer {
+    padding: 9rem 0rem;
+    margin-top: auto;
+
+    &_in {
+        .logo_box {
+            max-width: 40rem;
+            width: 100%;
+
+            img {
+                max-width: 21.8rem;
+                width: 100%;
+                min-height: 5.8rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 2rem;
+               
+            }
+
+            .box_input {
+                margin-top: 4rem;
+                border-bottom: 0.1rem solid rgba($white, 0.6);
+
+                input {
+                    background: transparent;
+                    border: none;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: $white;
+                    padding: 1rem 3rem;
+                }
+
+                .input_btn {
+                    padding: 2rem 0rem;
+                    min-height: 3rem;
+                    background: transparent;
+                    border: none;
+                    color: $white;
+
+                }
+            }
+        }
+
+        .list_box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .inner_box {
+                width: calc(100% / 2);
+
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin-bottom: 2rem;
+                    line-height: 2rem;
+                }
+
+                ul {
+                    li {
+                        a {
+                            font-size: 1.6rem;
+                            line-height: 1.6rem;
+                            margin-bottom: 1rem;
+                            font-weight: 500;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@use "../../../../public/assets/_var.scss" as *;
+
+.common_radio {
+  .form-check {
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 2rem;
+      height: 2rem;
+      background-color: transparent;
+      border-color: rgba($white, 0.5);
+
+      &:checked {
+        --bs-form-check-bg-image: url("../../../../public/apple-touch-icon.svg");
+        background-color: transparent;
+        border-color: $red;
+      }
+
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+
+    }
+
+    label {
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+  }
+}

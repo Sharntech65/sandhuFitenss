@@ -1,0 +1,40 @@
+@use "../../../../../public/assets/_var.scss" as *;
+
+.login {
+    width: 100%;
+
+    &_in {
+        height: calc(100vh - 6rem);
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        form {
+            .field_in {
+                &:not(:last-child) {
+                    margin-bottom: 1.5rem;
+                }
+
+            }
+
+            .custom_button {
+                width: 100%;
+            }
+        }
+    }
+
+    .login_para {
+        font-size: 1.5rem;
+        margin-top: 0.4rem;
+        line-height: 2rem;
+        font-weight: 400;
+        text-align: center;
+
+        a {
+            color: $red;
+            margin-left: 0.4rem;
+        }
+    }
+}

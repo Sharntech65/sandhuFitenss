@@ -1,0 +1,27 @@
+@use "../../../../../public/assets/_var.scss" as *;
+
+.signup {
+    width: 100%;
+
+    &_in {
+        height: calc(100vh - 6rem);
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        form{
+            .field_in
+            {
+                &:not(:last-child)
+                {
+                    margin-bottom: 1.5rem;
+                }
+                
+            }
+            .custom_button {
+                width: 100%;
+            }
+        }
+    }
+}
