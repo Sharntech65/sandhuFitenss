@@ -2,6 +2,7 @@ import CommonArrowButton from "@/components/common/commonArrowBtn/commonArrowBtn
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 import heroimg from "../../../../../public/assets/heroimg.png";
+import arrowimg from "../../../../../public/assets/Container.png";
 const Hero = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const Hero = () => {
         <Container>
           <div className="hero_in">
             <Row>
-              <Col lg={7}>
+              <Col lg={6}>
                 <div className="in_left">
                   <h1>
                     Your body can <span>stand almost</span> anything.
@@ -27,9 +28,12 @@ const Hero = () => {
                   </CommonArrowButton>
                 </div>
               </Col>
-              <Col lg={5}>
+              <Col lg={6}>
                 <div className="in_right">
                   <Image src={heroimg} alt="" />
+                  <div className="arrow_box">
+                    <Image src={arrowimg} alt="" />
+                  </div>
                 </div>
               </Col>
             </Row>

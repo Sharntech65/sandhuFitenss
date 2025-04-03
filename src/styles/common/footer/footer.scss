@@ -1,7 +1,7 @@
 @use "../../../../public/assets/_var.scss" as *;
 
 .footer {
-    padding: 9rem 0rem;
+    padding: 9rem 0rem 0rem 0rem;
     margin-top: auto;
 
     &_in {
@@ -19,7 +19,8 @@
                 font-size: 1.6rem;
                 font-weight: 500;
                 line-height: 2rem;
-               
+                margin-top: 1.9rem;
+
             }
 
             .box_input {
@@ -71,6 +72,33 @@
 
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .bottom_footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 8rem;
+        padding: 1rem 0rem;
+        border-top: 0.1rem solid rgba($white, 0.14);
+        min-height: 12.1rem;
+
+        p {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+        }
+
+        .icon_box {
+            svg {
+                width: 4rem;
+                height: 4rem;
+
+                &:not(:last-child) {
+                    margin-right: 2rem;
                 }
             }
         }

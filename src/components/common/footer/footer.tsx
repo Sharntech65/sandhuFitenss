@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import logo from "../../../../public/assets/mainlogo.png";
 import Link from "next/link";
 import CommonRadioBtn from "../commonRadioBtn/commonRadioBtn";
+import { BallIcon, FBIcon, InstaIcon } from "../../../../public/assets/icons";
 
 const Footer = () => {
   return (
@@ -18,8 +19,7 @@ const Footer = () => {
                     <Image src={logo} alt="" />
                   </Link>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quidem, unde?
+                    Push harder, go further. Your fitness journey starts today!
                   </p>
                   <div className="box_input">
                     <input type="text" placeholder="Enter Email" />
@@ -62,7 +62,12 @@ const Footer = () => {
             </Row>
           </div>
           <div className="bottom_footer">
-            <CommonRadioBtn label="hashah" />
+            <p>Copyright © 2025 All Rights Reserved.</p>
+            <div className="icon_box">
+              <InstaIcon />
+              <BallIcon />
+              <FBIcon />
+            </div>
           </div>
         </Container>
       </section>

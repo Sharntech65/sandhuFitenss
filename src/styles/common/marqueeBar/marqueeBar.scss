@@ -1,0 +1,30 @@
+.marquee_box {
+    background: red;
+    padding: 3rem 0rem;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        li {
+            margin: 0rem 5rem;
+            width: max-content;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 3.6rem;
+            text-transform: uppercase;
+            font-family: "rajdhani", sans-serif;
+            display: flex;
+            align-items: center;
+
+            svg {
+                height: 2.6rem;
+                margin-right: 1.5rem;
+                width: 2.6rem;
+            }
+        }
+
+    }
+}

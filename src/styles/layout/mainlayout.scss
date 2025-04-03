@@ -1,6 +1,8 @@
+@use "../../../public/assets/_var.scss" as *;
+
 .main_layout {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   height: 100%;
 }
