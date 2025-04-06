@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Onboardlayout = ({
   children,
@@ -9,14 +9,7 @@ const Onboardlayout = ({
   return (
     <>
       <div className="onboard_layout">
-        <Row>
-          <Col lg={6}>
-            <div className="left_onboard"></div>
-          </Col>
-          <Col lg={6}>
-            <div className="right_onboard">{children}</div>
-          </Col>
-        </Row>
+        <div className="onboard_layout_in">{children}</div>
       </div>
     </>
   );

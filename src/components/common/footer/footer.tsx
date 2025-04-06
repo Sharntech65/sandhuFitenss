@@ -1,10 +1,8 @@
 import Image from "next/image";
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import logo from "../../../../public/assets/mainlogo.png";
 import Link from "next/link";
-import CommonRadioBtn from "../commonRadioBtn/commonRadioBtn";
-import { BallIcon, FBIcon, InstaIcon } from "../../../../public/assets/icons";
+import { Col, Container, Row } from "react-bootstrap";
+import { BallIcon, ContactIcon, FBIcon, InstaIcon, MsgIcon, RightArrow } from "../../../../public/assets/icons";
+import logo from "../../../../public/assets/mainlogo.png";
 
 const Footer = () => {
   return (
@@ -23,37 +21,35 @@ const Footer = () => {
                   </p>
                   <div className="box_input">
                     <input type="text" placeholder="Enter Email" />
-                    <button className="input_btn">rivght</button>
+                    <button className="input_btn"><RightArrow/></button>
                   </div>
                 </div>
               </Col>
               <Col lg={7}>
                 <div className="list_box">
                   <div className="inner_box">
-                    <h3>oasojsop</h3>
+                    <h3>contact us</h3>
                     <ul>
                       <li>
-                        <Link href={""}>Home</Link>{" "}
+                        <Link href={""}><ContactIcon/>+91 123 456 789</Link>{" "}
                       </li>
                       <li>
-                        <Link href={""}>Home</Link>{" "}
+                        <Link href={""}><MsgIcon/>info@arshsandhu.com</Link>{" "}
                       </li>
-                      <li>
-                        <Link href={""}>Home</Link>{" "}
-                      </li>
+                     
                     </ul>
                   </div>
                   <div className="inner_box">
-                    <h3>oasojsop</h3>
+                    <h3>Our location</h3>
                     <ul>
                       <li>
-                        <Link href={""}>Home</Link>{" "}
+                        <Link href={""}>Wave Estate Mohali</Link>{" "}
                       </li>
                       <li>
-                        <Link href={""}>Home</Link>{" "}
+                        <Link href={""}>Sector 85, Sahibzada Ajit Singh Nagar</Link>{" "}
                       </li>
                       <li>
-                        <Link href={""}>Home</Link>{" "}
+                        <Link href={""}>Punjab (140308) In</Link>{" "}
                       </li>
                     </ul>
                   </div>

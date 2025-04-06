@@ -1,0 +1,60 @@
+@use "../../../../public/assets/_var.scss" as *;
+
+.price_page {
+  width: 100%;
+  background: url("../../../../public/assets/mainBg.png") no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  padding: 15rem 0rem 10rem 0rem;
+  &::after {
+    content: "Price";
+    position: absolute;
+    top: 10rem;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 10rem;
+    text-transform: uppercase;
+    font-family: $secondaryfont;
+
+    color: $clr202737;
+  }
+  &_in {
+    .head_price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      max-width: 70.2rem;
+      width: 100%;
+      margin: 0 auto;
+      flex-direction: column;
+      p {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.5rem;
+        text-transform: capitalize;
+        svg {
+          width: 3.4rem;
+          height: 1.9rem;
+          margin-right: 0.4rem;
+        }
+      }
+    }
+  }
+  .card_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .price_card {
+      &:not(:last-child) {
+        margin-right: 10rem;
+      }
+    }
+  }
+}

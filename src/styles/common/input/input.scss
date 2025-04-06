@@ -1,31 +1,30 @@
 @use "../../../../public/assets/_var.scss" as *;
 
 .common_input {
-    label {
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 2rem;
-        margin-bottom: 0.4rem;
+  label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  input {
+    min-height: 5rem;
+    height: 100%;
+    border-radius: 1.8rem;
+    border: 0.1rem solid $red;
+    max-width: 50rem;
+    width: 100%;
+    background: transparent;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0rem 2rem;
+
+    &::placeholder {
+      color: rgba($white, 0.4);
+      font-size: 1.6rem;
+      font-weight: 500;
     }
-
-    input {
-        min-height: 5rem;
-        height: 100%;
-        border-radius: 3rem;
-        border: 0.1rem solid $red;
-        max-width: 50rem;
-        width: 100%;
-        background: transparent;
-        color: $white;
-        font-size: 1.6rem;
-        font-weight: 600;
-        padding: 0rem 2rem;
-
-        &::placeholder {
-            color: $white;
-            font-size: 1.6rem;
-            font-weight: 500
-        }
-
-    }
+  }
 }

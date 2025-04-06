@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 const layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <div className="onboard_layout">
+      <div className="main_layout_main">
         <MainLayout>{children}</MainLayout>
       </div>
     </>

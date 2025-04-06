@@ -1,53 +1,61 @@
 @use "../../../../../public/assets/_var.scss" as *;
 
 .login {
-    width: 100%;
+  width: 100%;
 
-    &_in {
-        height: calc(100vh - 6rem);
-        color: $white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+  &_in {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-        form {
-            .field_in {
-                &:not(:last-child) {
-                    margin-bottom: 1.5rem;
-                }
-
-            }
-
-            .custom_button {
-                width: 100%;
-            }
-
-            .forget_pass {
-                padding: .4rem 0rem 2rem 0rem;
-                margin-top: -1.4rem;
-                text-align: right;
-
-                a {
-                    font-size: 1.5rem;
-                    font-weight: 400;
-                    line-height: 2rem;
-                    color: $red;
-                }
-            }
+    form {
+      .field_in {
+        &:not(:last-child) {
+          margin-bottom: 1.5rem;
         }
-    }
+      }
 
-    .login_para {
-        font-size: 1.5rem;
-        margin-top: 0.4rem;
-        line-height: 2rem;
-        font-weight: 400;
-        text-align: center;
+      .custom_button {
+        width: 100%;
+      }
+
+      .forget_pass {
+        padding: 0.4rem 0rem 2rem 0rem;
+        margin-top: -1.4rem;
+        text-align: right;
 
         a {
-            color: $red;
-            margin-left: 0.4rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2rem;
+          color: $red;
         }
+      }
     }
+  }
+  .forgot_pass {
+    color: $red;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: -1rem;
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+
+  }
+
+  .login_para {
+    font-size: 1.5rem;
+    margin-top: 0.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    text-align: center;
+
+    a {
+      color: $red;
+      margin-left: 0.4rem;
+    }
+  }
 }

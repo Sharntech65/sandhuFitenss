@@ -8,6 +8,8 @@ import Button from "@/components/common/button/button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { apiHelper } from "@/services/api.services";
+import { ArrowIcon } from "../../../../../public/assets/icons";
+import CommonArrowButton from "@/components/common/commonArrowBtn/commonArrowBtn";
 
 interface FormValues {
   email: string;
@@ -88,6 +90,9 @@ const Login = () => {
                   error={formik.touched.password ? formik.errors.password : ""}
                 />
               </div>
+              <Link href="/forgot-password" className="forgot_pass">
+                Forgot Password
+              </Link>
               <Button type="submit">Submit</Button>
             </form>
             <p className="login_para">

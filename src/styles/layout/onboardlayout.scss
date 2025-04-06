@@ -1,0 +1,22 @@
+@use "../../../public/assets/_var.scss" as *;
+.onboard_layout {
+  background: url("../../../public/assets/mainBg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 2rem;
+
+  &_in {
+    padding: 4rem;
+    border-radius: 1.8rem;
+    max-width: 60rem;
+    width: 100%;
+    background: $black;
+    box-shadow: 0 0rem 3rem rgba(162, 3, 3, 0.2);
+  }
+}

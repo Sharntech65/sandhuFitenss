@@ -62,11 +62,14 @@
         .in_right {
             position: relative;
             z-index: 0;
-
+            // height: 70.2rem;
+            
             img {
-                max-width: 62rem;
                 width: 100%;
-                height: 70.2rem;
+                max-width: 62rem;
+                height: 100%;
+                object-fit: contain;
+                
             }
 
             .arrow_box {
